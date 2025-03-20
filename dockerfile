@@ -1,4 +1,2 @@
-FROM alpine:3.9.3 
-LABEL maintainer="Collabnix" 
-ENV WELCOME_MESSAGE="Welcome to Docker World" 
-CMD ["sh", "-c", "echo $WELCOME_MESSAGE"]
+FROM http:2.4
+COPY index.html /usr/local/apache2/htdocs/index.html
